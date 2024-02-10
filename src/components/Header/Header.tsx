@@ -42,7 +42,9 @@ function Header() {
         </ul>
 
         <div className="header-buttons">
-          <button onClick={handleLoginButton}>Log In</button>
+          <button className="custom-button-1" onClick={handleLoginButton}>
+            Log In
+          </button>
         </div>
       </header>
       <Login />

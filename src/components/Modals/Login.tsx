@@ -10,6 +10,7 @@ import {
 import { toggleRegistrationModal } from '@/redux_toolkit/reducers/modalReducer';
 import { motion } from 'framer-motion';
 import { IoMdCloseCircle } from 'react-icons/io';
+import { FcGoogle } from 'react-icons/fc';
 
 function Login() {
   const [isSignIn, setIsSignIn] = useState(false);
@@ -22,6 +23,15 @@ function Login() {
     dispatch(toggleRegistrationModal());
     setIsSignIn(false);
     console.log('modal closed');
+  };
+
+  const handleGoogleLogin = async () => {
+    console.log('google login clicked');
+    window.open(
+      'https://cafe-hub-backend-production.up.railway.app/api/auth/google',
+      '_self',
+      'width=600,height=600'
+    );
   };
 
   const modalVariants = {
@@ -59,30 +69,40 @@ function Login() {
         exit="exit"
         className="modal-content"
       >
-        <button className="close-button" onClick={handleModalClose}>
+        <div className="close-button" onClick={handleModalClose}>
           <IoMdCloseCircle />
-        </button>
+        </div>
         <div className={`registration-container ${isSignIn ? 'active' : ''}`}>
           <div className="form-container sign-up">
             <form>
               <h1>Create Account</h1>
-              <div className="social-icons"></div>
-              <span>or use your email for registration</span>
+              <span>Use your email for registration</span>
               <input type="text" placeholder="Name" />
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
-              <button>Sign Up</button>
+              <input type="password" placeholder="Confirm Password" />
+              <button className="custom-button-1">Sign Up</button>
+              <span>OR</span>
+              <div className="social-container">
+                <FcGoogle />
+                <span onClick={handleGoogleLogin}>Continue With Google</span>
+              </div>
             </form>
           </div>
           <div className="form-container sign-in">
             <form>
               <h1>Sign In</h1>
-              <div className="social-icons"></div>
-              <span>or use your email and password</span>
+              <span>Use your email and password</span>
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
               <a href="#">Forget Your Password?</a>
-              <button>Sign In</button>
+              <button className="custom-button-1">Sign In</button>
+
+              <span>OR</span>
+              <div className="social-container">
+                <FcGoogle />
+                <span>Continue With Google</span>
+              </div>
             </form>
           </div>
           <div className="toggle-container">
@@ -90,7 +110,11 @@ function Login() {
               <div className="toggle-panel toggle-left">
                 <h1>Welcome Back!</h1>
                 <p>Enter your personal details to use all of site features</p>
-                <button className="hidden" id="login" onClick={toggleForm}>
+                <button
+                  className="custom-button-2"
+                  id="login"
+                  onClick={toggleForm}
+                >
                   Sign In
                 </button>
               </div>
@@ -100,7 +124,11 @@ function Login() {
                   Register with your personal details to use all of site
                   features
                 </p>
-                <button className="hidden" id="register" onClick={toggleForm}>
+                <button
+                  className="custom-button-2"
+                  id="register"
+                  onClick={toggleForm}
+                >
                   Sign Up
                 </button>
               </div>
