@@ -16,7 +16,7 @@
 
   // colors
   --color-theme-dk : #004B5B;
-  --color-theme : #1978de;
+  --color-theme : #2563EB;
   --color-theme-lt : #006075;
   --color-theme-ltr : #0088a7;
 
@@ -30,7 +30,10 @@
   --color-bg-lt: rgba(199, 199, 199, 0.642);
   --color-bg-theme: var(--color-theme);
 
-  --color-link-primary: #004B5B;
+  --color-border-primary: #000;
+  --color-border-secondary: #fff;
+
+  --color-link-primary: #2563EB;
   --color-link-secondary: #006075;
   --color-link-lt: #3c3c3c;
   --color-link-theme: var(--color-theme);
@@ -86,13 +89,22 @@ body {
   background-color: var(--color-bg-primary);
   max-width: 1440px;
   overflow-x: hidden;
+  min-height: 100vh;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 main{
 width: 100%;
+height: 200dvh;
 border-radius: var(--border-radius);
 display: flex;
+flex-direction: column;
 }
+// header{
+//   position: sticky;
+// }
 
 
 .custom-button-1 {

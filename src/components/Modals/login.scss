@@ -52,6 +52,9 @@
 		max-width: 25rem;
 		outline: none;
 	}
+	input:focus {
+		border: 2px solid var(--color-border-primary);
+	}
 }
 .form-container {
 	position: absolute;

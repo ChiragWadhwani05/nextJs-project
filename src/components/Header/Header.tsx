@@ -1,10 +1,9 @@
 'use client';
 
-import { useState } from 'react';
 import { FaCoffee } from 'react-icons/fa';
 import './header.scss';
 import Link from 'next/link';
-import Login from '@/components/Modals/Login';
+
 import {
   useAppDispatch,
   useAppSelector,
@@ -47,7 +46,6 @@ function Header() {
           </button>
         </div>
       </header>
-      <Login />
     </>
   );
 }

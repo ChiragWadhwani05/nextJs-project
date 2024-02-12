@@ -71,12 +71,12 @@ function HeroSection() {
             hidden: {
               opacity: 0,
               x: 500,
-              y: 300,
+              y: 400,
               position: 'absolute',
             },
             visible: {
               opacity: 1,
-              y: 350,
+              y: 400,
               x: 150,
               position: 'absolute',
             },
