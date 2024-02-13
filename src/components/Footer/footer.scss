@@ -1,0 +1,20 @@
+.footer{
+    width: 100%;
+    background-color: var(--color-bg-theme);
+    color: var(--color-text-secondary);
+    padding: 1.5rem;
+    & .title{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        & h1{
+            font-weight: 500;
+            font-size: var(--fs-5);
+        }
+        & svg{
+            font-size: var(--fs-4);
+            
+        }
+    }
+}

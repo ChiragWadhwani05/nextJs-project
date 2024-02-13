@@ -6,16 +6,12 @@
     background-color: var(--color-bg-primary);
     display: flex;
     justify-content: space-between;
-    border-radius: var(--border-radius);
-    position: sticky;
-    top: 0; /* Ensure it sticks to the top */
-  z-index: 100;
     & .header-title{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 8px;
-
+        text-decoration: none;
         & h1{
             font-weight: 500;
             font-size: var(--fs-4);

@@ -41,20 +41,7 @@
 		padding: 0 40px;
 		height: 100%;
 	}
-	input {
-		background-color: var(--color-bg-lt);
-		border: none;
-		margin: 8px 0;
-		padding: 10px 15px;
-		font-size: 13px;
-		border-radius: 4px;
-		width: 100%;
-		max-width: 25rem;
-		outline: none;
-	}
-	input:focus {
-		border: 2px solid var(--color-border-primary);
-	}
+
 }
 .form-container {
 	position: absolute;

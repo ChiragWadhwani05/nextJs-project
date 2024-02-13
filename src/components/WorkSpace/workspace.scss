@@ -1,14 +1,18 @@
 .home-workspaces{
     padding: 0 2rem;
-    & h2{
-        font-size: var(--fs-3);
-        font-weight: 500;
-        text-align: center;
+    > .heading{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        & h2{
+            font-size: var(--fs-3);
+            font-weight: 500;
+        }
     }
     & .container{
         margin: 2rem 0;
         display: flex;
-        gap: 3rem;
+        justify-content: space-between;
         & .workspace-card{
             width: 19rem;
             min-height: 100%;

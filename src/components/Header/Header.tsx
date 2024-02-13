@@ -21,10 +21,10 @@ function Header() {
   return (
     <>
       <header className="header-container">
-        <div className="header-title">
+        <Link href={'/'} className="header-title">
           <FaCoffee />
           <h1>CafeHub</h1>
-        </div>
+        </Link>
         <ul className="header-links">
           <li>
             <Link href="/my-map">My Map</Link>

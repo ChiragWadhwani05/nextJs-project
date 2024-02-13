@@ -26,7 +26,10 @@ function WorkSpace() {
       viewport={{ once: true }}
       className="home-workspaces"
     >
-      <h2>Newly Added Workspaces</h2>
+      <div className="heading">
+        <h2>Newly Added Workspaces</h2>
+        <p>See All</p>
+      </div>
       <div className="container">
         <div className="workspace-card">
           <div className="img-container">
@@ -129,7 +132,6 @@ function WorkSpace() {
           </div>
         </div>
       </div>
-      <p>See More</p>
     </motion.section>
   );
 }
