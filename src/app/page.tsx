@@ -1,13 +1,12 @@
 import HeroSection from '@/components/HeroSection/HeroSection';
-import WorkSpace from '@/components/WorkSpace/WorkSpace';
-
+import Latest from '@/components/WorkSpace/Latest';
+import Trending from '@/components/WorkSpace/Trending';
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <WorkSpace />
-      <WorkSpace />
-      <WorkSpace />
+      <Latest />
+      <Trending />
     </>
   );
 }

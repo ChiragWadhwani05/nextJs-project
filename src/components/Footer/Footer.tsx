@@ -1,13 +1,11 @@
 import './footer.scss';
 import { FaCoffee } from 'react-icons/fa';
+import Image from 'next/image';
 
 function Footer() {
   return (
     <div className="footer">
-      <div className="title">
-        <FaCoffee />
-        <h1>CafeHub</h1>
-      </div>
+      <Image src="/footer.svg" alt="footer" width={1000} height={1000} />
     </div>
   );
 }
