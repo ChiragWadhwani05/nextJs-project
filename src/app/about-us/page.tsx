@@ -35,16 +35,16 @@ function page() {
             to provide corporate and IT professionals with the ultimate remote
             work environments tailored to their specific needs and preferences.
           </p>
-          {/* <br />
-        <p>
-          Our platform offers a range of features designed to enhance your
-          remote work experience. From fast Wi-Fi and accessibility to detailed
-          timing information and options for meetings, group work, or solo
-          tasks, we have got you covered. Need a quick snack or a caffeine fix
-          to keep you going? No problem – our app also provides information on
-          meal and snack availability, along with options for alcoholic
-          beverages if you prefer.
-        </p> */}
+          <br />
+          <p>
+            Our platform offers a range of features designed to enhance your
+            remote work experience. From fast Wi-Fi and accessibility to
+            detailed timing information and options for meetings, group work, or
+            solo tasks, we have got you covered. Need a quick snack or a
+            caffeine fix to keep you going? No problem – our app also provides
+            information on meal and snack availability, along with options for
+            alcoholic beverages if you prefer.
+          </p>
           <br />
           <div className="btns-group">
             <Link href={'/my-map'}>
